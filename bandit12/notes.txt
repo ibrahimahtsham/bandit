@@ -1,0 +1,6 @@
+find out how much to shift (e.g., 13)
+let a = 1, then 1 + 13 = 14
+find what letter is at 14, which is n
+since n is position 14 and z is position 26, those numbers (14 to 26) map directly to the letter range n-z
+the remaining positions from 1 to 13 map to a-m (a through m)
+put n-z first, then a-m right after it to get n-za-m

@@ -1,0 +1,5 @@
+ssh bandit10@bandit.labs.overthewire.org -p 2220
+pass: B0s2khmbT9u0geKuOoVGW3JZKhndE3BG
+
+base64 -d data.txt
+The password is pYfOY6HwUsDj5rL9UvyhU7MCmv8vN5Ro

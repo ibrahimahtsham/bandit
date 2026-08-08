@@ -1,0 +1,17 @@
+ssh bandit5@bandit.labs.overthewire.org -p 2220
+pass: 6C7h9GD8M6ai5nr7wo1RonrzFjj9yIrG
+
+ls
+inhere
+
+cd inhere
+
+ls
+maybehere00  maybehere02  maybehere04  maybehere06  maybehere08  maybehere10  maybehere12  maybehere14  maybehere16  maybehere18
+maybehere01  maybehere03  maybehere05  maybehere07  maybehere09  maybehere11  maybehere13  maybehere15  maybehere17  maybehere19
+
+find . -size 1033c ! -executable -readable
+./maybehere07/.file2
+
+cat ./maybehere07/.file2
+pXa26xhMWaC2SvDotA4r9EgZkulOeSBW

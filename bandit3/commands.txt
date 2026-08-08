@@ -1,0 +1,10 @@
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+pass: PK8fYLZg2hnHSz83plBL1iEPKdD3QToB
+
+ls
+--spaces in this filename--
+
+cat ./--spaces\ in\ this\ filename--
+7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME
+cat "./--spaces in this filename--"
+7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME

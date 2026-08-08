@@ -1,0 +1,29 @@
+ssh bandit12@bandit.labs.overthewire.org -p 2220
+pass: GROozWPO8QyN0mGrjUkID0WCYkZiQxrN
+
+xxd -r data.txt | file -
+/dev/stdin: gzip compressed data, was "data2.bin", last modified: Wed Jun 24 14:58:46 2026, max compression, from Unix
+
+xxd -r data.txt | gunzip | file -
+/dev/stdin: bzip2 compressed data, block size = 900k
+
+xxd -r data.txt | gunzip | bunzip2 | file -
+/dev/stdin: gzip compressed data, was "data4.bin", last modified: Wed Jun 24 14:58:46 2026, max compression, from Unix
+
+xxd -r data.txt | gunzip | bunzip2 | gunzip | file -
+/dev/stdin: POSIX tar archive (GNU)
+
+xxd -r data.txt | gunzip | bunzip2 | gunzip | tar -O -xf - | file -
+/dev/stdin: POSIX tar archive (GNU)
+
+xxd -r data.txt | gunzip | bunzip2 | gunzip | tar -O -xf - | tar -O -xf - | file -
+/dev/stdin: bzip2 compressed data, block size = 900k
+
+xxd -r data.txt | gunzip | bunzip2 | gunzip | tar -O -xf - | tar -O -xf - | bunzip2 | file -
+/dev/stdin: POSIX tar archive (GNU)
+
+xxd -r data.txt | gunzip | bunzip2 | gunzip | tar -O -xf - | tar -O -xf - | bunzip2 | tar -O -xf - | file -
+/dev/stdin: gzip compressed data, was "data9.bin", last modified: Wed Jun 24 14:58:46 2026, max compression, from Unix
+
+xxd -r data.txt | gunzip | bunzip2 | gunzip | tar -O -xf - | tar -O -xf - | bunzip2 | tar -O -xf - | gunzip
+The password is qQYQiHOBPR8zR61qxYqX45quvihF2uzk

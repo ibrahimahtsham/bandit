@@ -1,0 +1,7 @@
+URL: https://overthewire.org/wargames/bandit/bandit0.html
+
+If you are playing "somegame", then:
+
+    * USERNAMES are somegame0, somegame1, ...
+    * Most LEVELS are stored in /somegame/.
+    * PASSWORDS for each level are stored in /etc/somegame_pass/.

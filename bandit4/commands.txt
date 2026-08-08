@@ -1,0 +1,13 @@
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+pass: 7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME
+
+ls
+inhere
+
+cd inhere/
+
+ls -a
+.  ..  ...Hiding-From-You
+
+cat ...Hiding-From-You
+xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq

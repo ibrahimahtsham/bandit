@@ -1,0 +1,8 @@
+ssh bandit9@bandit.labs.overthewire.org -p 2220
+pass: EjmOSvuAu7sGAHqHVcBDPirRe9T03kxl
+
+strings data.txt | grep "===="
+========== the
+========== password
+Y========== is
+========== B0s2khmbT9u0geKuOoVGW3JZKhndE3BG
