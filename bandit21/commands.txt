@@ -1,0 +1,12 @@
+ssh bandit20@bandit.labs.overthewire.org -p 2220
+pass: 4pIjcunZ0fK2vmp3IwfG8Vf7VhxD6pOA
+
+ls
+suconnect
+
+cat /etc/bandit_pass/bandit20 | nc -l -p 12345 & sleep 1 && ./suconnect 12345
+[4] 221
+Read: 4pIjcunZ0fK2vmp3IwfG8Vf7VhxD6pOA
+Password matches, sending next password
+bW9kBv5WC3P4yoDyf12LSdGuNz5ka6hY
+[3]-  Done                       cat /etc/bandit_pass/bandit20 | nc -l -p 12345

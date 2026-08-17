@@ -1,0 +1,10 @@
+ssh -i C:\Users\siamax\.ssh\bandit17_key bandit17@bandit.labs.overthewire.org -p 2220
+
+ls
+passwords.new  passwords.old
+
+diff passwords.old passwords.new
+42c42
+< qOg5pVOjPx9x9VccyYBADiT4xxyoUB8D
+---
+> OQxXZjELndr90zuhOTDYBEomI0SZITXI

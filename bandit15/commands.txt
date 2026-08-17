@@ -1,0 +1,5 @@
+ssh -i C:\Users\siamax\.ssh\bandit14_key bandit14@bandit.labs.overthewire.org -p 2220
+
+bandit14@bandit:~$ cat /etc/bandit_pass/bandit14 | nc localhost 30000
+Correct!
+pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7

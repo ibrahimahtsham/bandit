@@ -1,0 +1,14 @@
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+pass: qQYQiHOBPR8zR61qxYqX45quvihF2uzk
+
+bandit13@bandit:~$ ls
+HINT  sshkey.private
+
+check // cat sshkey.private
+
+exit
+
+copy the private key to local .ssh folder //scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private C:\Users\siamax\.ssh\bandit14_key
+pass: qQYQiHOBPR8zR61qxYqX45quvihF2uzk
+
+check // type C:\Users\siamax\.ssh\bandit14_key

@@ -1,0 +1,6 @@
+ssh bandit15@bandit.labs.overthewire.org -p 2220
+pass: pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7
+
+echo "pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7" | openssl s_client -connect localhost:30001 -ign_eof -quiet 2>/dev/null
+Correct!
+kS0Hf0u5HiXFwKMKFqXvPdOTNGGa0X8V
