@@ -1,0 +1,66 @@
+ssh bandit28@bandit.labs.overthewire.org -p 2220
+pass: y8Yd2ssKcpHpud7UvOSOxwamRMzIGIeQ
+
+exit
+
+git clone ssh://bandit28-git@bandit.labs.overthewire.org:2220/home/bandit28-git/repo
+
+cd repo
+
+git log -p
+commit 83d77407b76c9f86ac4e691a47618641c9d527ba (HEAD -> master, origin/master, origin/HEAD)
+Author: Morla Porla <morla@overthewire.org>
+Date:   Wed Jun 24 14:59:06 2026 +0000
+
+    fix info leak
+
+diff --git a/README.md b/README.md
+index 42331d9..5c6457b 100644
+--- a/README.md
++++ b/README.md
+@@ -4,5 +4,5 @@ Some notes for level29 of bandit.
+ ## credentials
+
+ - username: bandit29
+-- password: Em7eGtqaMySwNFjCpwzzHhLhospOcdt0
++- password: xxxxxxxxxx
+
+
+commit 13bbc4d2414ffe0439b8ee4f5e5c2949780cf4b3
+Author: Morla Porla <morla@overthewire.org>
+Date:   Wed Jun 24 14:59:06 2026 +0000
+
+    add missing data
+
+diff --git a/README.md b/README.md
+index 7ba2d2f..42331d9 100644
+--- a/README.md
++++ b/README.md
+@@ -4,5 +4,5 @@ Some notes for level29 of bandit.
+ ## credentials
+
+ - username: bandit29
+-- password: <TBD>
++- password: Em7eGtqaMySwNFjCpwzzHhLhospOcdt0
+
+
+commit f3334fbccbf9446a6af88a3c71021c2f57163322
+Author: Ben Dover <noone@overthewire.org>
+Date:   Wed Jun 24 14:59:06 2026 +0000
+
+    initial commit of README.md
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..7ba2d2f
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,8 @@
++# Bandit Notes
++Some notes for level29 of bandit.
++
++## credentials
++
++- username: bandit29
++- password: <TBD>
++

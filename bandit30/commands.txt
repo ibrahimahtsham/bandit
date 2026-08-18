@@ -1,0 +1,26 @@
+ssh bandit29@bandit.labs.overthewire.org -p 2220
+pass: Em7eGtqaMySwNFjCpwzzHhLhospOcdt0
+
+git clone ssh://bandit29-git@bandit.labs.overthewire.org:2220/home/bandit29-git/repo
+
+cd repo
+
+git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/dev
+  remotes/origin/master
+  remotes/origin/sploits-de
+
+git checkout dev
+branch 'dev' set up to track 'origin/dev'.
+Switched to a new branch 'dev'
+
+type README.md
+# Bandit Notes
+Some notes for bandit30 of bandit.
+
+## credentials
+
+- username: bandit30
+- password: jq9Dfg2rXsfYsWMgFuKlXhphjdH7USgX
