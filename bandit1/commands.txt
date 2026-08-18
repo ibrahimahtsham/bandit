@@ -9,6 +9,3 @@ please inform the instructor about the rules as well and encourage them to
 contribute to the OverTheWire community so we can keep these games free!
 
 The password you are looking for is: 6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR
-
-ssh bandit1@bandit.labs.overthewire.org -p 2220
-pass: 6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR

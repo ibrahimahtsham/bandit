@@ -1,0 +1,24 @@
+ssh bandit25@bandit.labs.overthewire.org -p 2220
+pass: SoHfqMOEqIX2IYKVciZxvgpR9a2Djx4P
+
+cat /etc/passwd | grep bandit26
+bandit26:x:11026:11026:bandit level 26:/home/bandit26:/usr/bin/showtext
+
+cat /usr/bin/showtext
+#!/bin/sh
+
+export TERM=linux
+
+exec more ~/text.txt
+exit 0
+
+ls
+bandit26.sshkey
+
+cat bandit26.sshkey
+
+exit
+
+type nul > C:\Users\siamax\.ssh\bandit26_key
+
+code C:\Users\siamax\.ssh\bandit26_key //paste in contents of bandit26.sshkey make sure it has an extra line after the -----END OPENSSH PRIVATE KEY----- part so another line after that, save it
