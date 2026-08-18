@@ -1,0 +1,7 @@
+ssh bandit32@bandit.labs.overthewire.org -p 2220
+pass: pWuj5jBQ6IgV0NXwiH6g1pXRF8S1YvbT
+
+$0
+
+cat /etc/bandit_pass/bandit33
+u4P2CyPOwPGLe94RdD9Uo2FxFwvnFswM
